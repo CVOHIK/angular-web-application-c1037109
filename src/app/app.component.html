@@ -1,0 +1,20 @@
+<header>
+<hello name="{{ name }}"></hello>
+</header>
+<div class="new">
+City 
+<br>
+<input type="text" [(ngModel)]=cityName>
+
+<br>
+ 
+<button type="submit" (click)="searchCity()" >Add City</button>
+<button type="button" (click)="delete()">Clear</button>
+     <div>
+        <span>City found: </span><br> {{cityNames}}
+      </div>
+<br>
+<p>{{cityNames}} <br> {{cityTemp}} <br> {{cityWeather}}</p>
+</div>
+<app-parent></app-parent>
+
